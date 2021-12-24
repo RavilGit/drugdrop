@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.drugndrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: yellow;
+}
+
+.col-header {
+    padding: 10px;
+
+    min-width: 232px;
+
+    background-color: #000;
+
+    color: yellow;
+
+    text-align: center;
+}
+
+.row {
+    width: 900px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeholder {
+    padding: 10px 0;
+
+    width: 230px;
+    min-height: 300px
+}
+
+.progress > .item {
+    box-shadow: 0px 0px 3px 3px blue;
+    color: white;
+}
+
+.done > .item {
+    box-shadow: 0px 0px 3px 3px green;
+    color: white;
+}
+
+.item {
+    padding: 10px 20px;
+
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    box-shadow: 0px 0px 3px 3px red;
+
+    background-color: #000;
+    color: #fff;
+
+    font-size: 18px;
+
+    cursor: grab;
+}
+
+.item:active {
+    cursor: grabbing;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.start {
+    background-color: red;
+}
+
+.start > h1 {
+    color: #fff;
+}
+
+.hold {
+    color: yellow;
+    border-radius: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+.hovered {
+    border-top: 2px solid red;
+}
